@@ -36,7 +36,6 @@ ul {
 
 
  /* headerContent */
-
 .headerContent {
 	display: flex;
 	justify-content: space-between;
@@ -94,7 +93,28 @@ ul {
 	display: inline-block;
 }
 
+/* services */
+.services {
+	padding-top: 66px;
+	padding-bottom: 51px;
+	background-color: #f2f2f2;
+}
 
+.servicesHeader__title {
+	font-size: 30px;
+	line-height: 18px;
+	font-weight: 900;
+	color: #666d89;
+	margin-bottom: 33px;
+}
+
+.servicesHeader__descr {
+	font-size: 18px;
+	line-height: 30px;
+	color: #767e9e;
+	font-weight: 300;
+	text-align: left;
+}
 
 
 
