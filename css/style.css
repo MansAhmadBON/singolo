@@ -91,6 +91,11 @@ ul {
   display: inline-block;
 }
 
+/* */
+
+.sliderSection {
+}
+
 /* services */
 .services {
   padding-top: 66px;
@@ -103,7 +108,7 @@ ul {
   line-height: 18px;
   font-weight: 900;
   color: #666d89;
-  margin-bottom: 33px;
+  margin-bottom: 27px;
 }
 
 .servicesHeader__descr {
@@ -119,7 +124,7 @@ ul {
 .servicesMain {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 52px;
+  padding-top: 48px;
 }
 
 .servicesMain__column {
@@ -161,4 +166,9 @@ ul {
   text-align: left;
   margin-top: 10px;
   margin-bottom: 37px;
+}
+
+.lineBottom {
+  height: 6px;
+  background-color: #fff;
 }
