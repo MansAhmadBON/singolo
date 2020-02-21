@@ -51,9 +51,32 @@ ul {
   color: #c9605c;
 }
 
+.navBox {
+  position: relative;
+  left: 25px;
+  top: 5px;
+}
+
 .nav__item {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.nav__item-2 {
+  left: -2px;
+}
+
+.nav__item-3 {
+  left: -4px;
+}
+
+.nav__item-4 {
+  left: -7px;
+}
+
+.nav__item-5 {
+  left: -8px;
 }
 
 .nav__list {
@@ -179,11 +202,40 @@ ul {
 
 .servicesMain__column {
   flex-basis: 33.3%;
+  position: relative;
+}
+
+.servicesMain__column-left {
+  left: 2px;
+  top: -3px;
+}
+
+.servicesMain__column-center {
+  left: 8px;
+  top: -3px;
+}
+
+.servicesMain__column-right {
+  left: 15px;
+  top: -3px;
 }
 
 .servicesItem {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.servicesItem-2 {
+  top: -7px;
+}
+
+.servicesItem-4 {
+  top: -7px;
+}
+
+.servicesItem-6 {
+  top: -7px;
 }
 
 .servicesItem__img {
@@ -197,6 +249,13 @@ ul {
 
 .servicesItem__textBox {
   padding-left: 21px;
+}
+
+.servicesItem__textBox-1,
+.servicesItem__textBox-2,
+.servicesItem__textBox-3,
+.servicesItem__textBox4 {
+  padding-left: 20px;
 }
 
 .servicesItem__title {
