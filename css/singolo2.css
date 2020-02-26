@@ -207,3 +207,77 @@ h2 {
   height: 6px;
   background-color: #323746;
 }
+
+/* aboutUs */
+.aboutUs {
+  background-color: #f2f2f2;
+  padding-top: 66px;
+}
+
+.aboutUs__descr {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #767e9e;
+  margin-top: 33px;
+  margin-bottom: 49px;
+}
+
+.aboutUs__mainContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.aboutUs__column {
+  max-width: 300px;
+  width: 100%;
+}
+
+.person__name {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  margin-top: 19px;
+  margin-bottom: 18px;
+}
+
+.person__text {
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-weight: 400;
+}
+
+.person__links {
+  padding-top: 28px;
+  display: flex;
+  width: 155px;
+  justify-content: space-between;
+}
+
+.link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #666d89;
+  padding: 7px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.link:hover {
+  border: 1px solid #2d303a;
+  background-color: #e7e7e7;
+}
+
+.aboutUs__line {
+  height: 6px;
+  margin-top: 67px;
+  background-color: #fff;
+}
