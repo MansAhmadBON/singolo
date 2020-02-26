@@ -4,3 +4,206 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+}
+
+.containerContent {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* portfolio */
+.portfolio {
+  background-color: #2d303a;
+  padding-top: 68px;
+}
+
+.portfolio__descr {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  margin-top: 32px;
+}
+
+.portfolio__ctrls {
+  padding-top: 18px;
+  padding-bottom: 19px;
+}
+
+.portfolio__btn {
+  border: 1px solid #767e9e;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #767e9e;
+  padding-left: 6px;
+  padding-top: 5px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+.portfolio__btn:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.portfolio__columnsBox {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 67px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.portfolio__column > .portfolio__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.portfolio__column {
+  width: 220px;
+}
+
+.portfolio__item {
+  width: 100%;
+  height: 187px;
+  transition: all 0.3s;
+}
+
+.portfolio__item-1 {
+  transition: all 0.3s;
+  background-image: url(../assets/img/portfolio-1.png);
+  background-size: 120%;
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+.portfolio__item-1:hover {
+  background-size: 100%;
+}
+
+.portfolio__item-2 {
+  background-image: url(../assets/img/portfolio-2.png);
+  background-size: 110%;
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+.portfolio__item-2:hover {
+  background-size: 100%;
+}
+
+.portfolio__item-3 {
+  background-image: url(../assets/img/portfolio-3.png);
+  background-size: 130%;
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+.portfolio__item-3:hover {
+  background-size: 110%;
+}
+
+.portfolio__item-4 {
+  background-image: url(../assets/img/portfolio-4.png);
+  background-size: 150%;
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+.portfolio__item-4:hover {
+  background-size: 115%;
+}
+
+.portfolio__item-5 {
+  background-image: url(../assets/img/portfolio-5.png);
+  background-size: 150%;
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+.portfolio__item-5:hover {
+  background-size: 115%;
+}
+
+.portfolio__item-6 {
+  background-image: url(../assets/img/portfolio-6.png);
+  background-size: 150%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+.portfolio__item-6:hover {
+  background-size: 100%;
+}
+
+.portfolio__item-7 {
+  background-image: url(../assets/img/portfolio-7.png);
+  background-size: 130%;
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+.portfolio__item-7:hover {
+  background-size: 80%;
+}
+
+.portfolio__item-8 {
+  background-image: url(../assets/img/portfolio-8.png);
+  background-size: 140%;
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+.portfolio__item-8:hover {
+  background-size: 100%;
+}
+
+.portfolio__item-9 {
+  background-image: url(../assets/img/portfolio-9.png);
+  background-size: 150%;
+  background-position-y: 90%;
+  background-position-x: 78%;
+}
+.portfolio__item-9:hover {
+  background-size: 100%;
+}
+
+.portfolio__item-10 {
+  background-image: url(../assets/img/portfolio-10.png);
+  background-size: 140%;
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+.portfolio__item-10:hover {
+  background-size: 115%;
+}
+
+.portfolio__item-11 {
+  background-image: url(../assets/img/portfolio-11.png);
+  background-size: 140%;
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+.portfolio__item-11:hover {
+  background-size: 100%;
+}
+
+.portfolio__item-12 {
+  background-image: url(../assets/img/portfolio-12.png);
+  background-size: 130%;
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+.portfolio__item-12:hover {
+  background-size: 100%;
+}
+
+.portfolioLine {
+  height: 6px;
+  background-color: #323746;
+}
