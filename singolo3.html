@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/singolo3.css" />
+    <title>singolo3</title>
+  </head>
+  <body>
+    <section class="quote">
+      <div class="containreContent">
+        <div class="quote__header">
+          <h2 class="quote__title">Get a Quote</h2>
+          <p class="quote__descr">
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+            Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+            lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+            tortor mauris condimentum nibh.
+          </p>
+        </div>
+        <div class="quote__mainContent">
+          <form class="quoteForm">
+            <input
+              class="quoteForm__input quoteForm__input-name"
+              type="text"
+              placeholder="Name (Required)"
+              required
+              pattern="[A-Za-z]{4,}"
+            />
+            <input
+              class="quoteForm__input quoteForm__input-email"
+              type="text"
+              placeholder="Email (Required)"
+              required
+            />
+            <input
+              class="quoteForm__input quoteForm__input-subject"
+              type="text"
+              placeholder="Subject"
+            />
+            <textarea
+              class="quoteForm__textArea"
+              placeholder="Describe your project in detail..."
+            ></textarea>
+            <button class="quoteForm__btn">Submit</button>
+          </form>
+          <aside class="contactInfoBox">
+            <h3 class="contactInfoBox__title">Contact Information</h3>
+            <p class="contactInfoBox__text">
+              Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
+              Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla
+              sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+              consequat felis.
+            </p>
+            <div class="contactInfoBox__linksBox">
+              <div class="contactInfoBox__linkItem">
+                <a
+                  href="#"
+                  class="contactInfoBox__link contactInfoBox__link-location"
+                >
+                  <img
+                    class="icoLink icoLink-location"
+                    src="./assets/img/location.png"
+                    alt="location ico"
+                  />
+                  <span class="linkDescr linkDescr-location">
+                    Elm St. 14/05 Lost City
+                  </span>
+                </a>
+              </div>
+
+              <div class="contactInfoBox__linkItem">
+                <a
+                  href="tel:#"
+                  class="contactInfoBox__link contactInfoBox__link-phone"
+                >
+                  <img
+                    class="icoLink icoLink-phone"
+                    src="./assets/img/phone.png"
+                    alt="location ico"
+                  />
+                  <span class="linkDescr linkDescr-phone">
+                    03528 331 86 35
+                  </span>
+                </a>
+              </div>
+
+              <div class="contactInfoBox__linkItem">
+                <a
+                  href="mailto:example@gmail.com"
+                  class="contactInfoBox__link contactInfoBox__link-mail"
+                >
+                  <img
+                    class="icoLink icoLink-mail"
+                    src="./assets/img/mail.png"
+                    alt="mail ico"
+                  />
+                  <span class="linkDescr linkDescr-mail">
+                    info@singolo.com
+                  </span>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <div class="quoteLine"></div>
+    </section>
+    <footer>
+      <div class="containreContent">
+        <div class="footerContent">
+          <h5 class="footerTitle">© Copyright 2013</h5>
+          <div class="footerLinksBox">
+            <a class="footerLink footerLink-facebook" href="#">
+              <img
+                class="ico-facebook"
+                src="./assets/img/facebook.png"
+                alt="ico facebook"
+              />
+            </a>
+            <a class="footerLink footerLink-google" href="#">
+              <img
+                class="ico-google"
+                src="./assets/img/google.png"
+                alt="ico google+"
+              />
+            </a>
+            <a class="footerLink footerLink-twitter" href="#">
+              <img
+                class="ico-twitter"
+                src="./assets/img/twitter.png"
+                alt="ico twitter"
+              />
+            </a>
+            <a class="footerLink footerLink-inst" href="#">
+              <img
+                class="ico-inst"
+                src="./assets/img/inst.png"
+                alt="ico instagramm"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

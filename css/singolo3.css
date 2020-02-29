@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containreContent {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.quote {
+  background-color: #f06c64;
+  padding-top: 65px;
+}
+
+.quote__title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+}
+
+.quote__descr {
+  margin-top: 27px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.quote__mainContent {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+}
+
+.quoteForm {
+  max-width: 619px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quoteForm__input {
+  border: none;
+  height: 38px;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  padding-bottom: 13px;
+  transition: all 0.2s;
+  outline: none;
+}
+.quoteForm__input::placeholder {
+  color: #f48c8f;
+}
+.quoteForm__input:hover {
+  border-bottom: 2px solid #2d303a;
+}
+
+.quoteForm__input:focus {
+  border-bottom: 2px solid #f31408;
+}
+
+.quoteForm__textArea {
+  padding-top: 7px;
+  padding-bottom: 10px;
+  resize: none;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  height: 202px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.quoteForm__textArea::placeholder {
+  color: #f48c8f;
+}
+
+.quoteForm__textArea:hover {
+  border-bottom: 2px solid #2d303a;
+}
+
+.quoteForm__textArea:focus {
+  border-bottom: 2px solid #f31408;
+}
+
+.quoteForm__btn {
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  margin-top: 16px;
+  border: 2px solid #d6564f;
+  border-radius: 5px;
+  color: #e4e0e0;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 13px;
+  transition: all 0.3s;
+}
+
+.quoteForm__btn:hover {
+  border: 2px solid #f5352b;
+  color: #fff;
+}
+
+.contactInfoBox {
+  max-width: 300px;
+  width: 100%;
+}
+
+.contactInfoBox__title {
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+}
+
+.contactInfoBox__text {
+  margin-top: 9px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.contactInfoBox__linksBox {
+  padding-top: 23px;
+}
+
+.contactInfoBox__linkItem {
+  margin-bottom: 12px;
+}
+
+.contactInfoBox__link:hover .linkDescr {
+  color: #fff;
+}
+
+.linkDescr {
+  display: inline-block;
+  margin-left: 18px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  position: relative;
+}
+
+.icoLink-location {
+  position: relative;
+  left: 3px;
+}
+
+.linkDescr-location {
+  left: -5px;
+}
+
+.contactInfoBox__link-phone {
+  position: relative;
+  top: -12px;
+}
+
+.contactInfoBox__link-mail {
+  position: relative;
+  top: -24px;
+}
+
+.linkDescr-mail {
+  position: relative;
+  left: -11px;
+}
+
+.linkDescr-phone {
+  position: relative;
+  left: -9px;
+}
+
+/* footer */
+
+footer {
+  padding-top: 33px;
+  padding-bottom: 32px;
+  background-color: #2d303a;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Lato";
+  color: #5e657e;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLinksBox {
+  display: flex;
+}
+
+.footerLink {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #666d89;
+  padding: 7px;
+  padding-right: 9px;
+  padding-left: 10px;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.footerLink:hover {
+  border: 1px solid #8f9cd3;
+}
+
+.quoteLine {
+  height: 6px;
+  background-color: #ea676b;
+}
+
+.footerTitle {
+  margin-top: -22px;
+  margin-left: 3px;
+}
+
+.footerLinksBox {
+  position: relative;
+  top: -11px;
+}
