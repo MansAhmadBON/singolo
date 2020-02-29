@@ -33,31 +33,48 @@ h2 {
   line-height: 30px;
   color: #767e9e;
   font-weight: 300;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 .portfolio__ctrls {
-  padding-top: 18px;
+  padding-top: 9px;
   padding-bottom: 19px;
 }
 
 .portfolio__btn {
   border: 1px solid #767e9e;
-  border-radius: 4px;
+  border-radius: 9px;
   font-size: 12px;
   font-weight: 400;
   line-height: 22px;
   color: #767e9e;
   padding-left: 6px;
-  padding-top: 5px;
-  padding-right: 6px;
-  padding-bottom: 4px;
-  margin-right: 10px;
+  padding-right: 8px;
+  margin-right: 5px;
   transition: all 0.3s;
 }
 .portfolio__btn:hover {
   color: #fff;
   border: 1px solid #fff;
+}
+
+.portfolio__btn-all {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-right: 7px;
+}
+
+.portfolio__btn-web {
+  padding-right: 4px;
+}
+
+.portfolio__btn-grafic {
+  padding-right: 3px;
+  margin-right: 6px;
+}
+
+.portfolio__btn-art {
+  padding-right: 5px;
 }
 
 .portfolio__columnsBox {
@@ -219,8 +236,8 @@ h2 {
   font-weight: 300;
   line-height: 30px;
   color: #767e9e;
-  margin-top: 33px;
-  margin-bottom: 49px;
+  margin-top: 28px;
+  margin-bottom: 45px;
 }
 
 .aboutUs__mainContent {
@@ -234,14 +251,24 @@ h2 {
   width: 100%;
 }
 
+.aboutUs__column-1 {
+  position: relative;
+  left: -1px;
+}
+
+.aboutUs__column-2 {
+  position: relative;
+  left: -2px;
+}
+
 .person__name {
   display: inline-block;
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
   font-weight: 900;
-  margin-top: 19px;
-  margin-bottom: 18px;
+  margin-top: 11px;
+  margin-bottom: 10px;
 }
 
 .person__text {
@@ -252,19 +279,20 @@ h2 {
 }
 
 .person__links {
-  padding-top: 28px;
+  padding-top: 23px;
   display: flex;
   width: 155px;
   justify-content: space-between;
 }
 
 .link {
+  position: relative;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: 1px solid #666d89;
   padding: 7px;
-  padding-right: 10px;
+  padding-right: 9px;
   padding-left: 10px;
   display: flex;
   justify-content: center;
@@ -274,6 +302,38 @@ h2 {
 .link:hover {
   border: 1px solid #2d303a;
   background-color: #e7e7e7;
+}
+
+.person1Link-facebook {
+  left: 2px;
+}
+
+.col2FacabookLink {
+  left: 2px;
+}
+
+.col2GoogleLink {
+  left: 1px;
+}
+
+.col2InstLink {
+  left: -1px;
+}
+
+.col3faceBookLink {
+  left: -1px;
+}
+
+.col3googleLink {
+  left: -1px;
+}
+
+.col3twitterLink {
+  left: -2px;
+}
+
+.col3InstLink {
+  left: -3px;
 }
 
 .aboutUs__line {
