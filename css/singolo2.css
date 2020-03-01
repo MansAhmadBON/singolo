@@ -228,7 +228,12 @@ h2 {
 /* aboutUs */
 .aboutUs {
   background-color: #f2f2f2;
-  padding-top: 66px;
+  padding-top: 69px;
+}
+
+.aboutUs__title {
+  position: relative;
+  left: -1px;
 }
 
 .aboutUs__descr {
@@ -259,6 +264,11 @@ h2 {
 .aboutUs__column-2 {
   position: relative;
   left: -2px;
+}
+
+.person__photo {
+  width: 302px;
+  height: 301px;
 }
 
 .person__name {
@@ -304,6 +314,41 @@ h2 {
   background-color: #e7e7e7;
 }
 
+.icoSocial {
+  width: 32px;
+  height: 32px;
+}
+
+.icoSocial-google {
+  margin-left: 2px;
+  width: 15px;
+  height: 18px;
+}
+
+.icoSocial-in {
+  margin-left: -2px;
+  width: 15px;
+  height: 32px;
+}
+
+.icoSocial-facebook {
+  height: 13px;
+  width: 12px;
+}
+
+.icoSocial-twitter {
+  height: 12px;
+  width: 15px;
+  position: relative;
+  top: 2px;
+}
+
+.icoSocial-google,
+.person1Link-inst {
+  position: relative;
+  top: 2px;
+}
+
 .person1Link-facebook {
   left: 2px;
 }
@@ -340,4 +385,49 @@ h2 {
   height: 6px;
   margin-top: 67px;
   background-color: #fff;
+}
+
+.googleLink-col3 {
+  left: -2px;
+  top: 0px;
+}
+
+.person__links-col3 {
+  padding-top: 25px;
+}
+
+.inLink-col3 {
+  left: -3px;
+  top: 1px;
+}
+
+.icoSocial-in-col3 {
+  position: relative;
+  left: 0px;
+  top: -1px;
+}
+
+.link-twitter-col3 {
+  left: -2px;
+}
+
+.icoSocial-twitter-col3 {
+  top: 0px;
+}
+
+.link-facebook-col2 {
+  top: 2px;
+}
+
+.link-google-col2 {
+  top: 1px;
+  left: 0;
+}
+
+.link-twitter-col2 {
+  top: 1px;
+}
+
+.Link-col3 {
+  left: -1px;
 }
