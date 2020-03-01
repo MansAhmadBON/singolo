@@ -260,3 +260,8 @@ footer {
   position: relative;
   top: -11px;
 }
+
+.footerLink img {
+  width: 15px;
+  height: 15px;
+}
