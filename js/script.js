@@ -10,39 +10,48 @@ window.onload = function () {
     const navLinkContact = document.querySelector('.nav__link-contact');
 
 
-    function removeActiveClass(){
-        navLinks.forEach(el => el.classList.remove('nav__link-active'));
-    }
-
-    function addActiveClass(el){
-        el.classList.add('nav__link-active');
-    }
+    const portfolioBox = document.querySelector('.portfolio__columnsBox');
+    const portfolioItems = document.querySelectorAll('.portfolio__item');
 
 
+    const removeNavActiveClass = () => navLinks.forEach(el => el.classList.remove('nav__link-active'));
+    const addNavActiveClass = el => el.classList.add('nav__link-active');
+
+
+    const removePortfolioItemClass = () => portfolioItems.forEach(el => el.classList.remove('portfolio__item-active'))
+
+    //Header
     navList.addEventListener('click', function (e) {
         const targetClass = e.target.className.split(' ')[1];
         switch (targetClass) {
             case 'nav__link-home':
-                removeActiveClass();
-                addActiveClass(navLinkHove);
+                removeNavActiveClass();
+                addNavActiveClass(navLinkHove);
                 break;
             case 'nav__link-services':
-                removeActiveClass();
-                addActiveClass(navLinkServices);
+                removeNavActiveClass();
+                addNavActiveClass(navLinkServices);
                 break;
             case 'nav__link-portfolio':
-                removeActiveClass();
-                addActiveClass(navLinkPortfolio);
+                removeNavActiveClass();
+                addNavActiveClass(navLinkPortfolio);
                 break;
             case 'nav__link-about':
-                removeActiveClass();
-                addActiveClass(navLinkAbout);
+                removeNavActiveClass();
+                addNavActiveClass(navLinkAbout);
                 break;
             case 'nav__link-contact':
-                removeActiveClass();
-                addActiveClass(navLinkContact);
+                removeNavActiveClass();
+                addNavActiveClass(navLinkContact);
                 break;
             default: break;
         }
-    })
+    });
+
+    // Portfolio. Взаимодействие с картинками
+    portfolioBox.addEventListener('click', function (e) {
+        const elem = e.target;
+        removePortfolioItemClass();
+        if( elem.className.split(' ')[0] === 'portfolio__item') elem.classList.add('portfolio__item-active');
+    });
 };

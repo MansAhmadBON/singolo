@@ -500,6 +500,10 @@ h2 {
     background-size: 100%;
 }
 
+.portfolio__item-active {
+    border: 5px solid #F06C64;
+}
+
 .portfolioLine {
     height: 6px;
     background-color: #323746;
