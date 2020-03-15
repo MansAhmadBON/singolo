@@ -1,28 +1,42 @@
 window.onload = function () {
-    const navList = document.querySelector('.nav__list');
-    const navLinks= document.querySelectorAll('.nav__link');
-    const navLinkHove = document.querySelector('.nav__link-home');
-    const navLinkServices = document.querySelector('.nav__link-services');
-    const navLinkPortfolio = document.querySelector('.nav__link-portfolio');
-    const navLinkAbout = document.querySelector('.nav__link-about');
-    const navLinkContact = document.querySelector('.nav__link-contact');
+    const D = document;
+    const navList = D.querySelector('.nav__list');
+    const navLinks= D.querySelectorAll('.nav__link');
+    const navLinkHove = D.querySelector('.nav__link-home');
+    const navLinkServices = D.querySelector('.nav__link-services');
+    const navLinkPortfolio = D.querySelector('.nav__link-portfolio');
+    const navLinkAbout = D.querySelector('.nav__link-about');
+    const navLinkContact = D.querySelector('.nav__link-contact');
 
-    const portfolioBox = document.querySelector('.portfolio__columnsBox');
-    const portfolioItems = document.querySelectorAll('.portfolio__item');
+    const portfolioBtnsBox = D.querySelector('.portfolio__ctrls');
+    const portfolioBtns = D.querySelectorAll('.portfolio__btn');
+    const portfolioBoxs = D.querySelectorAll('.portfolio__columnsBox');
+    const portfolioItems = D.querySelectorAll('.portfolio__item');
+    const portfolioAll = D.querySelector('.portfolio__columnsBox-all');
+    const portfolioWeb = D.querySelector('.portfolio__columnsBox-web');
+    const portfolioGraphic = D.querySelector('.portfolio__columnsBox-graphic');
+    const portfolioArt = D.querySelector('.portfolio__columnsBox-art');
 
-    const form = document.querySelector('.quoteForm');
-    const inputFormSubject = document.querySelector('.quoteForm__input-subject');
-    const textAreaForm = document.querySelector('.quoteForm__textArea');
-    const btnFormSubmit = document.querySelector('.quoteForm__btn');
-    const modalWindow = document.querySelector('.modalWindowWrapper');
-    const modalWindowBtn = document.querySelector('.modalWindow__btn');
-    const modalWindowTarget = document.querySelector('.modalWindow__content');
+    const form = D.querySelector('.quoteForm');
+    const inputFormSubject = D.querySelector('.quoteForm__input-subject');
+    const textAreaForm = D.querySelector('.quoteForm__textArea');
+    const btnFormSubmit = D.querySelector('.quoteForm__btn');
+    const modalWindow = D.querySelector('.modalWindowWrapper');
+    const modalWindowBtn = D.querySelector('.modalWindow__btn');
+    const modalWindowTarget = D.querySelector('.modalWindow__content');
 
 
     const removeNavActiveClass = () => navLinks.forEach(el => el.classList.remove('nav__link-active'));
     const addNavActiveClass = el => el.classList.add('nav__link-active');
 
     const removePortfolioItemClass = () => portfolioItems.forEach(el => el.classList.remove('portfolio__item-active'));
+    const removePortfilioActiveClass = () => portfolioBoxs.forEach(el => el.classList.remove('portfolio__columnsBox-active'));
+
+    function changeStatePortfolioBtns(newActiveBtn){
+        portfolioBtns.forEach(el => el.classList.remove('portfolio__btn-active'));
+        newActiveBtn.classList.add('portfolio__btn-active');
+    }
+
 
     //Header
     navList.addEventListener('click', function (e) {
@@ -52,12 +66,44 @@ window.onload = function () {
         }
     });
 
-    // Portfolio. Взаимодействие с картинками
-    portfolioBox.addEventListener('click', function (e) {
+    //Portfolio. Переключение табов
+    portfolioBtnsBox.addEventListener('click', function (e) {
         const elem = e.target;
-        removePortfolioItemClass();
-        if( elem.className.split(' ')[0] === 'portfolio__item') elem.classList.add('portfolio__item-active');
+        const targetClass = elem.className.split(' ')[1];
+        switch (targetClass) {
+            case 'portfolio__btn-all':
+                changeStatePortfolioBtns(elem);
+                removePortfilioActiveClass();
+                portfolioAll.classList.add('portfolio__columnsBox-active');
+                break;
+            case 'portfolio__btn-web':
+                changeStatePortfolioBtns(elem);
+                removePortfilioActiveClass();
+                portfolioWeb.classList.add('portfolio__columnsBox-active');
+                break;
+            case 'portfolio__btn-grafic':
+                changeStatePortfolioBtns(elem);
+                removePortfilioActiveClass();
+                portfolioGraphic.classList.add('portfolio__columnsBox-active');
+                break;
+            case 'portfolio__btn-art':
+                changeStatePortfolioBtns(elem);
+                removePortfilioActiveClass();
+                portfolioArt.classList.add('portfolio__columnsBox-active');
+                break;
+            default: break;
+        }
     });
+
+    // Portfolio. Взаимодействие с картинками
+    portfolioBoxs.forEach(portfolio => {
+        portfolio.addEventListener('click', function (e) {
+            const elem = e.target;
+            removePortfolioItemClass();
+            if( elem.className.split(' ')[0] === 'portfolio__item') elem.classList.add('portfolio__item-active');
+        });
+    });
+
 
     //form
     form.addEventListener('submit',e => e.preventDefault());
