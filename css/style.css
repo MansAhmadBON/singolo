@@ -135,6 +135,13 @@ ul {
     padding-bottom: 58px;
 }
 
+.sliderSection-slide-2 {
+    background-color: #648BF0;
+    padding-top: 148px;
+    padding-bottom: 58px;
+}
+
+
 .ctrl {
     cursor: pointer;
     transition: 0.4s ease-in-out all;
@@ -156,13 +163,68 @@ ul {
 }
 
 .slider__item {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
 }
 
+.phoneVerticalDisplay-item1 {
+    opacity: 0;
+    position: absolute;
+    top: 65px;
+    left: 14px;
+    transition: all .3s ease-in-out;
+}
+
+.phoneVerticalDisplay-active {
+    opacity: 1;
+}
+
+.phoneHorizontalDisplay-item1 {
+    opacity: 0;
+    position: absolute;
+    top: 14px;
+    left: 60px;
+    transition: all .3s ease-in-out;
+}
+
+.phoneHorizontalDisplay-active {
+    opacity: 1;
+}
+
+.slider__item-2 {
+    width: 520px;
+}
+
+.slider__item-active {
+    display: flex;
+}
+
 .imgBox {
     position: relative;
+}
+
+.imgBox-phoneSmall {
+    width: 157px;
+    height: 314px;
+}
+
+.imgBox-item2 {
+    width: 255px;
+    height: 513px;
+    position: relative;
+    z-index: 1000;
+    left: 10px;
+}
+
+.imgBox-item2Left {
+    position: relative;
+    left: 30px;
+}
+
+.imgBox-item2Right {
+    position: relative;
+    left: -30px;
 }
 
 .imgBox-vertical {
@@ -175,6 +237,19 @@ ul {
 
 .img-shadow {
     transform: rotate(180deg);
+}
+
+.phoneDisplay {
+    opacity: 0;
+    position: absolute;
+    z-index: 99;
+    left: 14px;
+    top: 69px;
+    transition: all .3s ease-in-out;
+}
+
+.phoneDisplay-active {
+    opacity: 1;
 }
 
 .sliderSectionLine {

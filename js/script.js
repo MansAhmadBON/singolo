@@ -8,6 +8,14 @@ window.onload = function () {
     const navLinkAbout = D.querySelector('.nav__link-about');
     const navLinkContact = D.querySelector('.nav__link-contact');
 
+    const phoneVerticalItem1 = D.querySelector('.imgBox__img-vertival');
+    const displayVerticalPhoneItem1 = D.querySelector('.phoneVerticalDisplay-item1');
+    const phoneHorizontalItem1 = D.querySelector('.imgBox__img-gor');
+    const displayHorizontalPhoneItem1 = D.querySelector('.phoneHorizontalDisplay-item1');
+    const phoneItem2 = D.querySelector('.phone-big');
+    const phoneDisplayItem2 = D.querySelector('.phoneDisplay');
+
+
     const portfolioBtnsBox = D.querySelector('.portfolio__ctrls');
     const portfolioBtns = D.querySelectorAll('.portfolio__btn');
     const portfolioBoxs = D.querySelectorAll('.portfolio__columnsBox');
@@ -36,6 +44,8 @@ window.onload = function () {
         portfolioBtns.forEach(el => el.classList.remove('portfolio__btn-active'));
         newActiveBtn.classList.add('portfolio__btn-active');
     }
+
+    const toggleClassPhone = (display, activeClass) => display.classList.toggle(activeClass);
 
 
     //Header
@@ -66,6 +76,13 @@ window.onload = function () {
         }
     });
 
+
+    //Slider. Slider. Активация экранов телефонов
+    phoneVerticalItem1.addEventListener('click',() => toggleClassPhone(displayVerticalPhoneItem1, 'phoneVerticalDisplay-active'));
+    phoneHorizontalItem1.addEventListener('click',  () => toggleClassPhone(displayHorizontalPhoneItem1, 'phoneHorizontalDisplay-active'));
+    phoneItem2.addEventListener('click', () => toggleClassPhone(phoneDisplayItem2, 'phoneDisplay-active'));
+
+
     //Portfolio. Переключение табов
     portfolioBtnsBox.addEventListener('click', function (e) {
         const elem = e.target;
@@ -94,6 +111,7 @@ window.onload = function () {
             default: break;
         }
     });
+
 
     // Portfolio. Взаимодействие с картинками
     portfolioBoxs.forEach(portfolio => {
