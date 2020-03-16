@@ -25,23 +25,23 @@
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item nav__item-1">
-                                <a class="nav__link nav__link-active" href="#">HOME</a>
+                                <a class="nav__link nav__link-home nav__link-active" href="#HOME">HOME</a>
                                 <span class="navIco"></span>
                             </li>
                             <li class="nav__item nav__item-2">
-                                <a class="nav__link" href="#">SERVICES</a>
+                                <a class="nav__link nav__link-services" href="#SERVICES">SERVICES</a>
                                 <span class="navIco"></span>
                             </li>
                             <li class="nav__item nav__item-3">
-                                <a class="nav__link" href="#">PORTFOLIO</a>
+                                <a class="nav__link nav__link-portfolio" href="#PORTFOLIO">PORTFOLIO</a>
                                 <span class="navIco"></span>
                             </li>
                             <li class="nav__item nav__item-4">
-                                <a class="nav__link" href="#">ABOUT</a>
+                                <a class="nav__link nav__link-about" href="#ABOUT">ABOUT</a>
                                 <span class="navIco"></span>
                             </li>
                             <li class="nav__item nav__item-5">
-                                <a class="nav__link" href="#">CONTACT</a>
+                                <a class="nav__link nav__link-contact" href="#CONTACT">CONTACT</a>
                             </li>
                         </ul>
                     </nav>
@@ -49,23 +49,40 @@
             </div>
         </div>
     </header>
-
-    <div class="sliderSection">
+<!--    sliderSection-slide-2-->
+    <div class="sliderSection " id="HOME">
         <div class="containreContent">
             <div class="slider">
                 <div class="slider__ctrl slider__ctrl-left">
                     <img class="ctrl ctrl-left" src="./assets/img/sliderCtrl.png" alt="control left">
                 </div>
-                <div class="slider__item">
+
+                <div class="slider__item slider__item-1 slider__item-active">
                     <div class="imgBox imgBox-vertical">
-                        <img class="imgBox__img imgBox__img-vertival" src="./assets/img/imgonline-com-ua-Transparent-backgr-jqhyJVGJLO9.png" alt="phone">
+                        <img class="imgBox__img imgBox__img-vertival" src="./assets/img/phone-vertical-Item1.png" alt="phone">
+                        <img class="phoneVerticalDisplay-item1 phoneVerticalDisplay-active" src="./assets/img/phone-vertical-display-Item1.png" alt="phone display">
                         <img src="./assets/img/Shadow.png" alt="shadow phone">
                     </div>
                     <div class="imgBox imgBox-goriz">
-                        <img class="imgBox__img imgBox__img-gor" src="./assets/img/imgonline-com-ua-Transparent-backgr-eralBGgoSvBfdDcr.png" alt="phone">
+                        <img class="imgBox__img imgBox__img-gor" src="./assets/img/phone-horizontal.png" alt="phone">
+                        <img class="phoneHorizontalDisplay-item1 phoneHorizontalDisplay-active" src="./assets/img/phone-horizontal-display.png" alt="phone display">
                         <img class="imgShadow-gor" src="./assets/img/ShadowG.png" alt="shadow phone">
                     </div>
                 </div>
+
+                <div class="slider__item slider__item-2 ">
+                    <div class="imgBox imgBox-vertical imgBox-item2Left imgBox-phoneSmall">
+                        <img class="imgBox__img imgBox__img-vertival" src="./assets/img/phone-vertical-small.png" alt="phone">
+                    </div>
+                    <div class="imgBox imgBox-item2">
+                        <img class="phone-big" src="./assets/img/phone-vertical.png" alt="phone">
+                        <img class="phoneDisplay phoneDisplay-active" src="./assets/img/phone-vertical-display.png" alt="phone">
+                    </div>
+                    <div class="imgBox imgBox-vertical imgBox-item2Right imgBox-phoneSmall">
+                        <img class="imgBox__img imgBox__img-vertival" src="./assets/img/phone-vertical-small.png" alt="phone">
+                    </div>
+                </div>
+
                 <div class="slider__ctrl slider__ctrl-right">
                     <img class="ctrl ctrl-right" src="./assets/img/sliderCtrl.png" alt="control left">
                 </div>
@@ -74,7 +91,7 @@
     </div>
     <div class="sliderSectionLine"></div>
 
-    <section class="services">
+    <section class="services" id="SERVICES">
         <div class="containreContent">
             <div class="servicesHeader">
                 <h2 class="servicesHeader__title">
@@ -166,7 +183,7 @@
     </section>
     <div class="lineBottom"></div>
 
-    <section class="portfolio">
+    <section class="portfolio" id="PORTFOLIO">
         <div class="containerContent">
             <div class="portfolio__header">
                 <h2 class="portfolio__title">Portfolio</h2>
@@ -177,43 +194,109 @@
             </div>
             <div class="portfolio__mainContent">
                 <div class="portfolio__ctrls">
-                    <button class="portfolio__btn portfolio__btn-all">All</button>
-                    <button class="portfolio__btn portfolio__btn-web">
-                        Web Desigin
-                    </button>
-                    <button class="portfolio__btn portfolio__btn-grafic">
-                        Graphic Desigin
-                    </button>
-                    <button class="portfolio__btn portfolio__btn-art">
-                        Artwork
-                    </button>
+                    <button class="portfolio__btn portfolio__btn-all portfolio__btn-active">All</button>
+                    <button class="portfolio__btn portfolio__btn-web">Web Desigin</button>
+                    <button class="portfolio__btn portfolio__btn-grafic">Graphic Desigin</button>
+                    <button class="portfolio__btn portfolio__btn-art">Artwork</button>
                 </div>
-                <div class="portfolio__columnsBox">
+
+                <div class="portfolio__columnsBox portfolio__columnsBox-all portfolio__columnsBox-active">
                     <div class="portfolio__column portfolio__column-1">
-                        <div class="portfolio__item portfolio__item-1"/></div>
-                    <div class="portfolio__item portfolio__item-2"></div>
-                    <div class="portfolio__item portfolio__item-3"></div>
+                        <div class="portfolio__item portfolio__item-1"></div>
+                        <div class="portfolio__item portfolio__item-2"></div>
+                        <div class="portfolio__item portfolio__item-3"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-2">
+                        <div class="portfolio__item portfolio__item-4"></div>
+                        <div class="portfolio__item portfolio__item-5"></div>
+                        <div class="portfolio__item portfolio__item-6"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-3">
+                        <div class="portfolio__item portfolio__item-7"></div>
+                        <div class="portfolio__item portfolio__item-8"></div>
+                        <div class="portfolio__item portfolio__item-9"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-4">
+                        <div class="portfolio__item portfolio__item-10"></div>
+                        <div class="portfolio__item portfolio__item-11"></div>
+                        <div class="portfolio__item portfolio__item-12"></div>
+                    </div>
                 </div>
-                <div class="portfolio__column portfolio__column-2">
-                    <div class="portfolio__item portfolio__item-4"></div>
-                    <div class="portfolio__item portfolio__item-5""></div>
-                <div class="portfolio__item portfolio__item-6"></div>
+
+                <div class="portfolio__columnsBox portfolio__columnsBox-web">
+                    <div class="portfolio__column portfolio__column-1">
+                        <div class="portfolio__item portfolio__item-1"></div>
+                        <div class="portfolio__item portfolio__item-2"></div>
+                        <div class="portfolio__item portfolio__item-3"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-2">
+                        <div class="portfolio__item portfolio__item-4"></div>
+                        <div class="portfolio__item portfolio__item-5"></div>
+                        <div class="portfolio__item portfolio__item-6"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-3">
+                        <div class="portfolio__item portfolio__item-7"></div>
+                        <div class="portfolio__item portfolio__item-8"></div>
+                        <div class="portfolio__item portfolio__item-9"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-4">
+                        <div class="portfolio__item portfolio__item-10"></div>
+                        <div class="portfolio__item portfolio__item-11"></div>
+                        <div class="portfolio__item portfolio__item-12"></div>
+                    </div>
+                </div>
+
+                <div class="portfolio__columnsBox portfolio__columnsBox-graphic">
+                    <div class="portfolio__column portfolio__column-1">
+                        <div class="portfolio__item portfolio__item-1"></div>
+                        <div class="portfolio__item portfolio__item-6"></div>
+                        <div class="portfolio__item portfolio__item-3"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-2">
+                        <div class="portfolio__item portfolio__item-4"></div>
+                        <div class="portfolio__item portfolio__item-10"></div>
+                        <div class="portfolio__item portfolio__item-2"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-3">
+                        <div class="portfolio__item portfolio__item-7"></div>
+                        <div class="portfolio__item portfolio__item-11"></div>
+                        <div class="portfolio__item portfolio__item-9"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-4">
+                        <div class="portfolio__item portfolio__item-5"></div>
+                        <div class="portfolio__item portfolio__item-8"></div>
+                        <div class="portfolio__item portfolio__item-12"></div>
+                    </div>
+                </div>
+
+                <div class="portfolio__columnsBox portfolio__columnsBox-art">
+                    <div class="portfolio__column portfolio__column-3">
+                        <div class="portfolio__item portfolio__item-7"></div>
+                        <div class="portfolio__item portfolio__item-8"></div>
+                        <div class="portfolio__item portfolio__item-9"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-4">
+                        <div class="portfolio__item portfolio__item-10"></div>
+                        <div class="portfolio__item portfolio__item-11"></div>
+                        <div class="portfolio__item portfolio__item-12"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-1">
+                        <div class="portfolio__item portfolio__item-1"></div>
+                        <div class="portfolio__item portfolio__item-2"></div>
+                        <div class="portfolio__item portfolio__item-3"></div>
+                    </div>
+                    <div class="portfolio__column portfolio__column-2">
+                        <div class="portfolio__item portfolio__item-4"></div>
+                        <div class="portfolio__item portfolio__item-5"></div>
+                        <div class="portfolio__item portfolio__item-6"></div>
+                    </div>
+                </div>
             </div>
-            <div class="portfolio__column portfolio__column-3">
-                <div class="portfolio__item portfolio__item-7"></div>
-                <div class="portfolio__item portfolio__item-8"></div>
-                <div class="portfolio__item portfolio__item-9"></div>
             </div>
-            <div class="portfolio__column portfolio__column-4">
-                <div class="portfolio__item portfolio__item-10"></div>
-                <div class="portfolio__item portfolio__item-11"></div>
-                <div class="portfolio__item portfolio__item-12"></div>
-            </div>
-        </div>
         <div class="portfolioLine"></div>
     </section>
 
-    <section class="aboutUs">
+    <section class="aboutUs" id="ABOUT">
         <div class="containerContent">
             <div class="aboutUs__header">
                 <h2 class="aboutUs__title">About Us</h2>
@@ -301,7 +384,7 @@
         <div class="aboutUs__line"></div>
     </section>
 
-    <section class="quote">
+    <section class="quote" id="CONTACT">
         <div class="containreContent">
             <div class="quote__header">
                 <h2 class="quote__title">Get a Quote</h2>
@@ -423,5 +506,13 @@
             </div>
         </div>
     </footer>
+
+    <div class="modalWindowWrapper">
+        <div class="modalWindow">
+            <div class="modalWindow__content"></div>
+            <button class="modalWindow__btn">Ok</button>
+        </div>
+    </div>
+<script src="./js/script.js"></script>
 </body>
 </html>
