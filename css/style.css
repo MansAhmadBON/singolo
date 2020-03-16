@@ -219,12 +219,14 @@ ul {
 
 .imgBox-item2Left {
     position: relative;
-    left: 30px;
+    left: 15px;
+    opacity: .5;
 }
 
 .imgBox-item2Right {
     position: relative;
-    left: -30px;
+    left: -20px;
+    opacity: .5;
 }
 
 .imgBox-vertical {

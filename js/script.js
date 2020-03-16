@@ -8,6 +8,10 @@ window.onload = function () {
     const navLinkAbout = D.querySelector('.nav__link-about');
     const navLinkContact = D.querySelector('.nav__link-contact');
 
+    const sliderItems = D.querySelectorAll('.slider__item');
+    const btnPrev = D.querySelector('.slider__ctrl-left');
+    const btnNext = D.querySelector('.slider__ctrl-right');
+    const sliderSection = D.querySelector('.sliderSection');
     const phoneVerticalItem1 = D.querySelector('.imgBox__img-vertival');
     const displayVerticalPhoneItem1 = D.querySelector('.phoneVerticalDisplay-item1');
     const phoneHorizontalItem1 = D.querySelector('.imgBox__img-gor');
@@ -44,7 +48,16 @@ window.onload = function () {
         portfolioBtns.forEach(el => el.classList.remove('portfolio__btn-active'));
         newActiveBtn.classList.add('portfolio__btn-active');
     }
-
+    
+    function changeBackgroundSlider(sliderItems, currentSlideIndex) {
+        const slideClassName = sliderItems[currentSlideIndex].className.split(' ')[1];
+        if(slideClassName === 'slider__item-2'){
+            sliderSection.classList.add('sliderSection-slide-2')
+        } else {
+            sliderSection.classList.remove('sliderSection-slide-2')
+        }
+    }
+    
     const toggleClassPhone = (display, activeClass) => display.classList.toggle(activeClass);
 
 
@@ -77,7 +90,36 @@ window.onload = function () {
     });
 
 
-    //Slider. Slider. Активация экранов телефонов
+    //Slider. Переключение слайдов
+    let currentSlideIndex = 0;
+
+    btnNext.addEventListener('click', function () {
+        sliderItems[currentSlideIndex].classList.remove('slider__item-active');
+
+        currentSlideIndex++;
+        if(currentSlideIndex > sliderItems.length - 1){
+            currentSlideIndex = 0;
+        }
+
+        sliderItems[currentSlideIndex].classList.add('slider__item-active');
+        changeBackgroundSlider(sliderItems, currentSlideIndex);
+    });
+
+    btnPrev.addEventListener('click', function () {
+        sliderItems[currentSlideIndex].classList.remove('slider__item-active');
+
+        currentSlideIndex--;
+        if(currentSlideIndex < 0){
+            currentSlideIndex = sliderItems.length - 1;
+        }
+
+        sliderItems[currentSlideIndex].classList.add('slider__item-active');
+        changeBackgroundSlider(sliderItems, currentSlideIndex);
+
+    });
+
+
+    //Slider. Активация экранов телефонов
     phoneVerticalItem1.addEventListener('click',() => toggleClassPhone(displayVerticalPhoneItem1, 'phoneVerticalDisplay-active'));
     phoneHorizontalItem1.addEventListener('click',  () => toggleClassPhone(displayHorizontalPhoneItem1, 'phoneHorizontalDisplay-active'));
     phoneItem2.addEventListener('click', () => toggleClassPhone(phoneDisplayItem2, 'phoneDisplay-active'));
@@ -146,12 +188,6 @@ window.onload = function () {
         modalWindowTarget.innerHTML = '';
         modalWindow.classList.remove('modalWindowWrapper-active');
     });
-
-
-
-
-
-
 
 
 };
