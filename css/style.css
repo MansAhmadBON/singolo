@@ -99,6 +99,7 @@ ul {
 }
 
 .mobNav__list {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -187,8 +188,7 @@ ul {
     text-transform: uppercase;
 }
 .nav__link:hover {
-    padding-bottom: 10px;
-    border-bottom: 2px solid #fff;
+    color: #886A30;
 }
 
 .nav__link,
@@ -200,7 +200,7 @@ ul {
     color: #f06c64;
 }
 .nav__link-active:hover {
-    border-bottom: 2px solid #f06c64;
+    color: #886A30;
 }
 
 .navIco {
@@ -298,7 +298,7 @@ ul {
     width: 255px;
     height: 513px;
     position: relative;
-    z-index: 1000;
+    z-index: 250;
     left: 10px;
 }
 

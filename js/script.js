@@ -17,7 +17,7 @@ window.onload = function () {
     const headerMobOpen = D.querySelector('.headerMobOpen');
     const headerMobOpenBtnClose = D.querySelector('.headerMobOpen__btnClose');
     const headerMobTitle = D.querySelector('.headerMobTitle');
-
+    const mobNavList = D.querySelector('.mobNav__list');
 
     const sliderItems = D.querySelectorAll('.slider__item');
     const btnPrev = D.querySelector('.slider__ctrl-left');
@@ -98,7 +98,7 @@ window.onload = function () {
         });
     }
     //меню с переключением. Активным остается выбранный элемент меню, предыдущий становится неактивным. Страница должна при этом переходить по якорям в заданную позицию с плавной анимацией.
-    navList.addEventListener('click', function (e) {
+    function handleClicked(e){
         const targetClass = e.target.className.split(' ')[1];
         switch (targetClass) {
             case 'nav__link-home':
@@ -128,8 +128,10 @@ window.onload = function () {
                 break;
             default: break;
         }
-    });
+    }
 
+    navList.addEventListener('click', handleClicked);
+    mobNavList.addEventListener('click', handleClicked);
 
     //Slider. Переключение слайдов
     let currentSlideIndex = 0;
