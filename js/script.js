@@ -13,6 +13,11 @@ window.onload = function () {
     const navLinkPortfolio = D.querySelector('.nav__link-portfolio');
     const navLinkAbout = D.querySelector('.nav__link-about');
     const navLinkContact = D.querySelector('.nav__link-contact');
+    const headerMobBtn = D.querySelector('.headerMob__btn');
+    const headerMobOpen = D.querySelector('.headerMobOpen');
+    const headerMobOpenBtnClose = D.querySelector('.headerMobOpen__btnClose');
+    const headerMobTitle = D.querySelector('.headerMobTitle');
+
 
     const sliderItems = D.querySelectorAll('.slider__item');
     const btnPrev = D.querySelector('.slider__ctrl-left');
@@ -54,7 +59,6 @@ window.onload = function () {
         portfolioBtns.forEach(el => el.classList.remove('portfolio__btn-active'));
         newActiveBtn.classList.add('portfolio__btn-active');
     }
-    
     function changeBackgroundSlider(sliderItems, currentSlideIndex) {
         const slideClassName = sliderItems[currentSlideIndex].className.split(' ')[1];
         if(slideClassName === 'slider__item-2'){
@@ -93,7 +97,7 @@ window.onload = function () {
             }
         });
     }
-    //Сделать меню с переключением. Активным остается выбранный элемент меню, предыдущий становится неактивным. Страница должна при этом переходить по якорям в заданную позицию с плавной анимацией.
+    //меню с переключением. Активным остается выбранный элемент меню, предыдущий становится неактивным. Страница должна при этом переходить по якорям в заданную позицию с плавной анимацией.
     navList.addEventListener('click', function (e) {
         const targetClass = e.target.className.split(' ')[1];
         switch (targetClass) {
@@ -227,4 +231,17 @@ window.onload = function () {
     });
 
 
+
+    //Open block 'mob navigation'
+    headerMobBtn.addEventListener('click', function () {
+        headerMobOpen.classList.add('headerMobOpen-active');
+        headerMobBtn.classList.add('headerMob__btn-opacity0');
+        headerMobTitle.classList.add('headerMobTitle-opacity0');
+    });
+
+    headerMobOpenBtnClose.addEventListener('click', function () {
+        headerMobOpen.classList.remove('headerMobOpen-active');
+        headerMobBtn.classList.remove('headerMob__btn-opacity0');
+        headerMobTitle.classList.remove('headerMobTitle-opacity0');
+    });
 };
