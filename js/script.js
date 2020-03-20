@@ -1,5 +1,11 @@
 window.onload = function () {
     const D = document;
+
+    const services = D.querySelector('.services');
+    const portfolio = D.querySelector('.portfolio');
+    const aboutUs = D.querySelector('.aboutUs');
+    const quote = D.querySelector('.quote');
+
     const navList = D.querySelector('.nav__list');
     const navLinks= D.querySelectorAll('.nav__link');
     const navLinkHove = D.querySelector('.nav__link-home');
@@ -40,7 +46,7 @@ window.onload = function () {
 
     const removeNavActiveClass = () => navLinks.forEach(el => el.classList.remove('nav__link-active'));
     const addNavActiveClass = el => el.classList.add('nav__link-active');
-
+    const scrollToTheTarget = coordinateY => window.scrollTo(0, coordinateY.offsetTop - 90);
     const removePortfolioItemClass = () => portfolioItems.forEach(el => el.classList.remove('portfolio__item-active'));
     const removePortfilioActiveClass = () => portfolioBoxs.forEach(el => el.classList.remove('portfolio__columnsBox-active'));
 
@@ -60,28 +66,59 @@ window.onload = function () {
     
     const toggleClassPhone = (display, activeClass) => display.classList.toggle(activeClass);
 
+    navLinks.forEach(a => a.addEventListener('click',  e => e.preventDefault()));
+
 
     //Header
+
+    //При переходе и скролле, активным должен становиться элемент меню того блока, на котором находится текущая позиция.
+    D.addEventListener('scroll', onScroll);
+
+    function onScroll(event){
+        const currentPosition = window.scrollY;
+        const sectionsPage = D.querySelectorAll('.sectionPage');
+        const links = D.querySelectorAll('.nav__list a');
+
+        sectionsPage.forEach(section => {
+
+            if(section.offsetTop - 100 <= currentPosition && (section.offsetTop + section.offsetHeight) > currentPosition){
+                links.forEach(a => {
+                    a.classList.remove('nav__link-active');
+
+                    if(section.getAttribute('id') === a.getAttribute('href').substring(1)){
+                        a.classList.add('nav__link-active');
+                    }
+
+                })
+            }
+        });
+    }
+    //Сделать меню с переключением. Активным остается выбранный элемент меню, предыдущий становится неактивным. Страница должна при этом переходить по якорям в заданную позицию с плавной анимацией.
     navList.addEventListener('click', function (e) {
         const targetClass = e.target.className.split(' ')[1];
         switch (targetClass) {
             case 'nav__link-home':
+                scrollToTheTarget(sliderSection);
                 removeNavActiveClass();
                 addNavActiveClass(navLinkHove);
                 break;
             case 'nav__link-services':
+                scrollToTheTarget(services);
                 removeNavActiveClass();
                 addNavActiveClass(navLinkServices);
                 break;
             case 'nav__link-portfolio':
+                scrollToTheTarget(portfolio);
                 removeNavActiveClass();
                 addNavActiveClass(navLinkPortfolio);
                 break;
             case 'nav__link-about':
+                scrollToTheTarget(aboutUs);
                 removeNavActiveClass();
                 addNavActiveClass(navLinkAbout);
                 break;
             case 'nav__link-contact':
+                scrollToTheTarget(quote);
                 removeNavActiveClass();
                 addNavActiveClass(navLinkContact);
                 break;
