@@ -13,13 +13,50 @@
     <title>Singolo</title>
 </head>
 <body>
-    <header>
-        <div class="containreContent">
+    <header class="headerMob">
+        <div class="headerMob__btn ">
+            <div class="btn btn-layer1"></div>
+            <div class="btn btn-layer2"></div>
+            <div class="btn btn-layer3"></div>
+        </div>
+        <h1 class="logo__content headerMobTitle ">Singolo<span class="logo__content-redIco">*</span></h1>
+    </header>
+    <div class="headerMobOpen">
+        <div class="headerMobOpen__content">
+            <div class="topContent">
+                <div class="headerMobOpen__btnClose">
+                    <div class="btn btn-layer1"></div>
+                    <div class="btn btn-layer2"></div>
+                    <div class="btn btn-layer3"></div>
+                </div>
+                <h1 class="logo__content headerMobTitle">Singolo<span class="logo__content-redIco">*</span></h1>
+            </div>
+            <nav class="nav mobNav">
+                <ul class="nav__list mobNav__list">
+                    <li class="nav__item nav__item-1  mobNav__item mobNav__item-1">
+                        <a class="nav__link nav__link-home nav__link-active mobNav__link" href="#HOME">HOME</a>
+                    </li>
+                    <li class="nav__item nav__item-2  mobNav__item mobNav__item-1">
+                        <a class="nav__link nav__link-services mobNav__link" href="#SERVICES">SERVICES</a>
+                    </li>
+                    <li class="nav__item nav__item-3 mobNav__item mobNav__item-1">
+                        <a class="nav__link nav__link-portfolio mobNav__link" href="#PORTFOLIO">PORTFOLIO</a>
+                    </li>
+                    <li class="nav__item nav__item-4 mobNav__item mobNav__item-1">
+                        <a class="nav__link nav__link-about mobNav__link" href="#ABOUT">ABOUT</a>
+                    </li>
+                    <li class="nav__item nav__item-5 mobNav__item mobNav__item-1">
+                        <a class="nav__link nav__link-contact mobNav__link" href="#CONTACT">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <header class="headerMain">
+        <div class="containerContent">
             <div class="headerContent">
                 <div class="logo">
-                <span class="logo__content"
-                >Singolo<span class="logo__content-redIco">*</span></span
-                >
+                    <h1 class="logo__content">Singolo<span class="logo__content-redIco">*</span></h1>
                 </div>
                 <div class="navBox">
                     <nav class="nav">
@@ -50,8 +87,8 @@
         </div>
     </header>
 <!--    sliderSection-slide-2-->
-    <div class="sliderSection " id="HOME">
-        <div class="containreContent">
+    <div class="sectionPage sliderSection " id="HOME">
+        <div class="containerContent containerContent-slider">
             <div class="slider">
                 <div class="slider__ctrl slider__ctrl-left">
                     <img class="ctrl ctrl-left" src="./assets/img/sliderCtrl.png" alt="control left">
@@ -61,7 +98,7 @@
                     <div class="imgBox imgBox-vertical">
                         <img class="imgBox__img imgBox__img-vertival" src="./assets/img/phone-vertical-Item1.png" alt="phone">
                         <img class="phoneVerticalDisplay-item1 phoneVerticalDisplay-active" src="./assets/img/phone-vertical-display-Item1.png" alt="phone display">
-                        <img src="./assets/img/Shadow.png" alt="shadow phone">
+                        <img class="shadowVertical-item1" src="./assets/img/Shadow.png" alt="shadow phone">
                     </div>
                     <div class="imgBox imgBox-goriz">
                         <img class="imgBox__img imgBox__img-gor" src="./assets/img/phone-horizontal.png" alt="phone">
@@ -72,14 +109,14 @@
 
                 <div class="slider__item slider__item-2 ">
                     <div class="imgBox imgBox-vertical imgBox-item2Left imgBox-phoneSmall">
-                        <img class="imgBox__img imgBox__img-vertival" src="./assets/img/phone-vertical-small.png" alt="phone">
+                        <img class="imgBox__img imgBox__img-vertival imgBox__img-vertival-slide2" src="./assets/img/phone-vertical-small.png" alt="phone">
                     </div>
                     <div class="imgBox imgBox-item2">
-                        <img class="phone-big" src="./assets/img/phone-vertical.png" alt="phone">
-                        <img class="phoneDisplay phoneDisplay-active" src="./assets/img/phone-vertical-display.png" alt="phone">
+                        <img class="phone-big phone-big-slide2" src="./assets/img/phone-vertical.png" alt="phone">
+                        <img class="phoneDisplay phoneDisplay-slide2 phoneDisplay-active" src="./assets/img/phone-vertical-display.png" alt="phone">
                     </div>
                     <div class="imgBox imgBox-vertical imgBox-item2Right imgBox-phoneSmall">
-                        <img class="imgBox__img imgBox__img-vertival" src="./assets/img/phone-vertical-small.png" alt="phone">
+                        <img class="imgBox__img imgBox__img-vertival imgBox__img-vertival-slide2" src="./assets/img/phone-vertical-small.png" alt="phone">
                     </div>
                 </div>
 
@@ -91,8 +128,8 @@
     </div>
     <div class="sliderSectionLine"></div>
 
-    <section class="services" id="SERVICES">
-        <div class="containreContent">
+    <section class="sectionPage services" id="SERVICES">
+        <div class="containerContent">
             <div class="servicesHeader">
                 <h2 class="servicesHeader__title">
                     Our Services
@@ -105,85 +142,86 @@
                 </p>
             </div>
             <div class="servicesMain">
-                <div class="servicesMain__column servicesMain__column-left">
-                    <div class="servicesItem servicesItem-1">
-                        <div class="servicesItem__img">
-                            <img src="./assets/svg/pen.svg" alt="ico pen" />
-                        </div>
-                        <div class="servicesItem__textBox servicesItem__textBox-1">
-                            <h6 class="servicesItem__title">Custom Design</h6>
-                            <p class="servicesItem__descr">
-                                Curabitur vestibulum eget mauris quis laoreet. Phasellus in
-                                quam laoreet, viverra lacus ut, ultrices velit.
-                            </p>
-                        </div>
+
+                <div class="servicesItem servicesItem-1">
+                    <div class="servicesItem__img">
+                        <img src="./assets/svg/pen.svg" alt="ico pen" />
                     </div>
-                    <div class="servicesItem servicesItem-2">
-                        <div class="servicesItem__img">
-                            <img src="./assets/svg/phone.svg" alt="ico phone" />
-                        </div>
-                        <div class="servicesItem__textBox servicesItem__textBox-2">
-                            <h6 class="servicesItem__title">Responsive Layout</h6>
-                            <p class="servicesItem__descr">
-                                Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
-                            </p>
-                        </div>
+                    <div class="servicesItem__textBox servicesItem__textBox-1">
+                        <h6 class="servicesItem__title">Custom Design</h6>
+                        <p class="servicesItem__descr">
+                            Curabitur vestibulum eget mauris quis laoreet. Phasellus in
+                            quam laoreet, viverra lacus ut, ultrices velit.
+                        </p>
                     </div>
                 </div>
-                <div class="servicesMain__column servicesMain__column-center">
-                    <div class="servicesItem servicesItem-3">
-                        <div class="servicesItem__img">
-                            <img src="./assets/svg/bulb.svg" alt="ico bulb" />
-                        </div>
-                        <div class="servicesItem__textBox servicesItem__textBox-3">
-                            <h6 class="servicesItem__title">Inovative Ideas</h6>
-                            <p class="servicesItem__descr">
-                                Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
-                            </p>
-                        </div>
+
+                <div class="servicesItem servicesItem-2">
+                    <div class="servicesItem__img">
+                        <img src="./assets/svg/phone.svg" alt="ico phone" />
                     </div>
-                    <div class="servicesItem servicesItem-4">
-                        <div class="servicesItem__img">
-                            <img src="./assets/svg/bubble.svg" alt="ico bubble" />
-                        </div>
-                        <div class="servicesItem__textBox servicesItem__textBox-4">
-                            <h6 class="servicesItem__title">24 / 7 Support</h6>
-                            <p class="servicesItem__descr">
-                                Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .
-                            </p>
-                        </div>
+                    <div class="servicesItem__textBox servicesItem__textBox-2">
+                        <h6 class="servicesItem__title">Responsive Layout</h6>
+                        <p class="servicesItem__descr">
+                            Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
+                        </p>
                     </div>
                 </div>
-                <div class="servicesMain__column servicesMain__column-right">
-                    <div class="servicesItem servicesItem-5">
-                        <div class="servicesItem__img">
-                            <img src="./assets/svg/heart.svg" alt="ico heart" />
-                        </div>
-                        <div class="servicesItem__textBox servicesItem__textBox-5">
-                            <h6 class="servicesItem__title">Love Is The Answer</h6>
-                            <p class="servicesItem__descr">
-                                Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
-                            </p>
-                        </div>
+
+                <div class="servicesItem servicesItem-5">
+                    <div class="servicesItem__img">
+                        <img src="./assets/svg/heart.svg" alt="ico heart" />
                     </div>
-                    <div class="servicesItem servicesItem-6">
-                        <div class="servicesItem__img">
-                            <img src="./assets/svg/star.svg" alt="ico star" />
-                        </div>
-                        <div class="servicesItem__textBox servicesItem__textBox-6">
-                            <h6 class="servicesItem__title">Feel Like A Star</h6>
-                            <p class="servicesItem__descr">
-                                Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
-                            </p>
-                        </div>
+                    <div class="servicesItem__textBox servicesItem__textBox-5">
+                        <h6 class="servicesItem__title">Love Is The Answer</h6>
+                        <p class="servicesItem__descr">
+                            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+                        </p>
                     </div>
                 </div>
+
+                <div class="servicesItem servicesItem-4">
+                    <div class="servicesItem__img">
+                        <img src="./assets/svg/bubble.svg" alt="ico bubble" />
+                    </div>
+                    <div class="servicesItem__textBox servicesItem__textBox-4">
+                        <h6 class="servicesItem__title">24 / 7 Support</h6>
+                        <p class="servicesItem__descr">
+                            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .
+                        </p>
+                    </div>
+                </div>
+
+                <div class="servicesItem servicesItem-3">
+                    <div class="servicesItem__img">
+                        <img src="./assets/svg/bulb.svg" alt="ico bulb" />
+                    </div>
+                    <div class="servicesItem__textBox servicesItem__textBox-3">
+                        <h6 class="servicesItem__title">Inovative Ideas</h6>
+                        <p class="servicesItem__descr">
+                            Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="servicesItem servicesItem-6">
+                    <div class="servicesItem__img">
+                        <img src="./assets/svg/star.svg" alt="ico star" />
+                    </div>
+                    <div class="servicesItem__textBox servicesItem__textBox-6">
+                        <h6 class="servicesItem__title">Feel Like A Star</h6>
+                        <p class="servicesItem__descr">
+                            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
     <div class="lineBottom"></div>
 
-    <section class="portfolio" id="PORTFOLIO">
+    <section class="sectionPage portfolio" id="PORTFOLIO">
         <div class="containerContent">
             <div class="portfolio__header">
                 <h2 class="portfolio__title">Portfolio</h2>
@@ -200,103 +238,72 @@
                     <button class="portfolio__btn portfolio__btn-art">Artwork</button>
                 </div>
 
-                <div class="portfolio__columnsBox portfolio__columnsBox-all portfolio__columnsBox-active">
-                    <div class="portfolio__column portfolio__column-1">
-                        <div class="portfolio__item portfolio__item-1"></div>
-                        <div class="portfolio__item portfolio__item-2"></div>
-                        <div class="portfolio__item portfolio__item-3"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-2">
-                        <div class="portfolio__item portfolio__item-4"></div>
-                        <div class="portfolio__item portfolio__item-5"></div>
-                        <div class="portfolio__item portfolio__item-6"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-3">
-                        <div class="portfolio__item portfolio__item-7"></div>
-                        <div class="portfolio__item portfolio__item-8"></div>
-                        <div class="portfolio__item portfolio__item-9"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-4">
-                        <div class="portfolio__item portfolio__item-10"></div>
-                        <div class="portfolio__item portfolio__item-11"></div>
-                        <div class="portfolio__item portfolio__item-12"></div>
-                    </div>
-                </div>
+                <ul class="portfolio__columnsBox portfolio__columnsBox-all portfolio__columnsBox-active">
+                    <li><div class="portfolio__item portfolio__item-1"></div></li>
+                    <li><div class="portfolio__item portfolio__item-2"></div></li>
+                    <li><div class="portfolio__item portfolio__item-3"></div></li>
+                    <li><div class="portfolio__item portfolio__item-4"></div></li>
+                    <li><div class="portfolio__item portfolio__item-5"></div></li>
+                    <li><div class="portfolio__item portfolio__item-6"></div></li>
+                    <li><div class="portfolio__item portfolio__item-7"></div></li>
+                    <li><div class="portfolio__item portfolio__item-8"></div></li>
+                    <li><div class="portfolio__item portfolio__item-9"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-10"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-11"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-12"></div></li>
+                </ul>
 
-                <div class="portfolio__columnsBox portfolio__columnsBox-web">
-                    <div class="portfolio__column portfolio__column-1">
-                        <div class="portfolio__item portfolio__item-1"></div>
-                        <div class="portfolio__item portfolio__item-2"></div>
-                        <div class="portfolio__item portfolio__item-3"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-2">
-                        <div class="portfolio__item portfolio__item-4"></div>
-                        <div class="portfolio__item portfolio__item-5"></div>
-                        <div class="portfolio__item portfolio__item-6"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-3">
-                        <div class="portfolio__item portfolio__item-7"></div>
-                        <div class="portfolio__item portfolio__item-8"></div>
-                        <div class="portfolio__item portfolio__item-9"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-4">
-                        <div class="portfolio__item portfolio__item-10"></div>
-                        <div class="portfolio__item portfolio__item-11"></div>
-                        <div class="portfolio__item portfolio__item-12"></div>
-                    </div>
-                </div>
+                <ul class="portfolio__columnsBox portfolio__columnsBox-web">
+                    <li><div class="portfolio__item portfolio__item-2"></div></li>
+                    <li><div class="portfolio__item portfolio__item-1"></div></li>
+                    <li><div class="portfolio__item portfolio__item-4"></div></li>
+                    <li><div class="portfolio__item portfolio__item-3"></div></li>
+                    <li><div class="portfolio__item portfolio__item-6"></div></li>
+                    <li><div class="portfolio__item portfolio__item-5"></div></li>
+                    <li><div class="portfolio__item portfolio__item-8"></div></li>
+                    <li><div class="portfolio__item portfolio__item-7"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-10"></div></li>
+                    <li><div class="portfolio__item portfolio__item-9"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-12"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-11"></div></li>
+                </ul>
 
-                <div class="portfolio__columnsBox portfolio__columnsBox-graphic">
-                    <div class="portfolio__column portfolio__column-1">
-                        <div class="portfolio__item portfolio__item-1"></div>
-                        <div class="portfolio__item portfolio__item-6"></div>
-                        <div class="portfolio__item portfolio__item-3"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-2">
-                        <div class="portfolio__item portfolio__item-4"></div>
-                        <div class="portfolio__item portfolio__item-10"></div>
-                        <div class="portfolio__item portfolio__item-2"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-3">
-                        <div class="portfolio__item portfolio__item-7"></div>
-                        <div class="portfolio__item portfolio__item-11"></div>
-                        <div class="portfolio__item portfolio__item-9"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-4">
-                        <div class="portfolio__item portfolio__item-5"></div>
-                        <div class="portfolio__item portfolio__item-8"></div>
-                        <div class="portfolio__item portfolio__item-12"></div>
-                    </div>
-                </div>
+                <ul class="portfolio__columnsBox portfolio__columnsBox-graphic">
+                    <li><div class="portfolio__item portfolio__item-8"></div></li>
+                    <li><div class="portfolio__item portfolio__item-5"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-12"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-11"></div></li>
+                    <li><div class="portfolio__item portfolio__item-1"></div></li>
+                    <li><div class="portfolio__item portfolio__item-2"></div></li>
+                    <li><div class="portfolio__item portfolio__item-3"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-10"></div></li>
+                    <li><div class="portfolio__item portfolio__item-7"></div></li>
+                    <li><div class="portfolio__item portfolio__item-4"></div></li>
+                    <li><div class="portfolio__item portfolio__item-6"></div></li>
+                    <li><div class="portfolio__item portfolio__item-9"></div></li>
+                </ul>
 
-                <div class="portfolio__columnsBox portfolio__columnsBox-art">
-                    <div class="portfolio__column portfolio__column-3">
-                        <div class="portfolio__item portfolio__item-7"></div>
-                        <div class="portfolio__item portfolio__item-8"></div>
-                        <div class="portfolio__item portfolio__item-9"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-4">
-                        <div class="portfolio__item portfolio__item-10"></div>
-                        <div class="portfolio__item portfolio__item-11"></div>
-                        <div class="portfolio__item portfolio__item-12"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-1">
-                        <div class="portfolio__item portfolio__item-1"></div>
-                        <div class="portfolio__item portfolio__item-2"></div>
-                        <div class="portfolio__item portfolio__item-3"></div>
-                    </div>
-                    <div class="portfolio__column portfolio__column-2">
-                        <div class="portfolio__item portfolio__item-4"></div>
-                        <div class="portfolio__item portfolio__item-5"></div>
-                        <div class="portfolio__item portfolio__item-6"></div>
-                    </div>
-                </div>
+                <ul class="portfolio__columnsBox portfolio__columnsBox-art">
+                    <li><div class="portfolio__item portfolio__item-5"></div></li>
+                    <li><div class="portfolio__item portfolio__item-2"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-10"></div></li>
+                    <li><div class="portfolio__item portfolio__item-6"></div></li>
+                    <li><div class="portfolio__item portfolio__item-4"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-11"></div></li>
+                    <li><div class="portfolio__item portfolio__item-7"></div></li>
+                    <li><div class="portfolio__item portfolio__item-3"></div></li>
+                    <li><div class="portfolio__item portfolio__item-8"></div></li>
+                    <li><div class="portfolio__item portfolio__item-1"></div></li>
+                    <li ><div class="portfolio__item portfolio__item-12"></div></li>
+                    <li><div class="portfolio__item portfolio__item-9"></div></li>
+                </ul>
+
             </div>
             </div>
         <div class="portfolioLine"></div>
     </section>
 
-    <section class="aboutUs" id="ABOUT">
+    <section class="sectionPage aboutUs" id="ABOUT">
         <div class="containerContent">
             <div class="aboutUs__header">
                 <h2 class="aboutUs__title">About Us</h2>
@@ -384,8 +391,8 @@
         <div class="aboutUs__line"></div>
     </section>
 
-    <section class="quote" id="CONTACT">
-        <div class="containreContent">
+    <section class="sectionPage quote" id="CONTACT">
+        <div class="containerContent">
             <div class="quote__header">
                 <h2 class="quote__title">Get a Quote</h2>
                 <p class="quote__descr">
@@ -470,7 +477,7 @@
     </section>
 
     <footer>
-        <div class="containreContent">
+        <div class="containerContent">
             <div class="footerContent">
                 <h5 class="footerTitle">© Copyright 2013</h5>
                 <div class="footerLinksBox">
